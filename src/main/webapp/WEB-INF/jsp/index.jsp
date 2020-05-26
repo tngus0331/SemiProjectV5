@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12 text-center">
             <h1 class="display-3 margin30">超機密 PROJECT 補完計劃</h1>
-            <img src="../../img/gendo.png" class="margin30" width="55%">
+            <img src="/resources/img/gendo.png" class="margin30" width="55%">
             <p>Maecenas luctus dignissim magna, vitae iaculis lorem ultricies eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus porttitor tellus scelerisque, vel placerat ipsum pulvinar. Donec ut convallis sem. Curabitur hendrerit nulla vitae turpis viverra, at sodales lacus aliquet. Aenean id posuere neque, quis pulvinar sapien. Aliquam vestibulum maximus nibh at dapibus. Quisque feugiat egestas elementum. Nunc vulputate imperdiet augue, sed rutrum ipsum fermentum ac. Sed porttitor rhoncus tempus. Aliquam dapibus consequat orci, eu fringilla erat facilisis vel. Phasellus sagittis nulla ac sem efficitur convallis. Mauris convallis metus quis efficitur interdum. Etiam eget nunc lectus. Duis feugiat ipsum sit amet justo dignissim, sed hendrerit lectus sodales. Maecenas volutpat, nunc ut viverra lobortis, libero ipsum laoreet mauris, quis efficitur ante nisi sed ex.</p>
             <p><button type="button"
                        class="btn btn-success margin30">지금 바로 시작하기</button></p>

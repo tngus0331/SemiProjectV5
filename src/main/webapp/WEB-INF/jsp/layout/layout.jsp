@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/bs4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/fa47/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/semiproject.css">
+    <link rel="stylesheet" href="/resources/bs4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/fa47/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/resources/css/semiproject.css">
     <title>부트스트랩4-index</title>
 </head>
 <body>
@@ -72,9 +72,9 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="/bs4/js/bootstrap.min.js"></script>
-<script src="/js/board.js"></script>
-<script src="/js/join.js"></script>
+<script src="/resources/bs4/js/bootstrap.min.js"></script>
+<script src="/resources/js/board.js"></script>
+<script src="/resources/js/join.js"></script>
 
 <script>
     // 회원가입버튼
