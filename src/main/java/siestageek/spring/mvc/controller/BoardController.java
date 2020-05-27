@@ -1,12 +1,22 @@
 package siestageek.spring.mvc.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import siestageek.spring.mvc.service.BoardService;
+import siestageek.spring.mvc.vo.BoardVO;
 
 @Controller
 public class BoardController {
+
+    private BoardService bsrv;
+
+    @Autowired
+    public BoardController(BoardService bsrv) {
+        this.bsrv = bsrv;
+    }
 
     // 목록보기
     @RequestMapping(value = "/board/list")
@@ -34,7 +44,9 @@ public class BoardController {
 
     // 새글쓰기
     @RequestMapping(value = "/board/write", method = RequestMethod.POST)
-    public String writeok() {
+    public String writeok(BoardVO bd) {
+
+        bsrv.newBoard(bd);
 
         return "redirect:/board/list";
     }
