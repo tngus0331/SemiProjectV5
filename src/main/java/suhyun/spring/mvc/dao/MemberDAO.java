@@ -3,7 +3,7 @@ package suhyun.spring.mvc.dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import siestageek.spring.mvc.vo.MemberVO;
+import suhyun.spring.mvc.vo.MemberVO;
 
 import java.sql.*;
 import java.util.ArrayList;
