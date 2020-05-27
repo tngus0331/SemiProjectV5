@@ -1,12 +1,25 @@
 package siestageek.spring.mvc.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import siestageek.spring.mvc.service.MemberService;
+import siestageek.spring.mvc.vo.MemberVO;
 
 @Controller
 public class JoinController {
+
+    // 회원 CRUD 처리순서
+    // IndexController -> MemberService -> MemberDAO
+
+    private MemberService msrv;
+
+    @Autowired
+    public JoinController(MemberService msrv) {
+        this.msrv = msrv;
+    }
 
     // 이용약관
     @RequestMapping(value = "join/agree", method = RequestMethod.GET)
@@ -61,10 +74,16 @@ public class JoinController {
     }
 
     // 회원가입
-    @RequestMapping(value = "join/joinme", method = RequestMethod.POST)
-    public String joinmeok() {
+    // joinfrm의 모든 input 요소의 이름name과
+    // MemberVO의 멤버변수명이 일치하는 경우
+    // 자동으로 입력값을 멤버변수에 대입해 줌
+    @RequestMapping(value = "join/joinme",
+                    method = RequestMethod.POST)
+    public String joinmeok(MemberVO m) {
 
-        return "redirect:join/joinok";
+        msrv.newMember(m);
+
+        return "redirect:/join/joinok";
     }
 
     // 가입완료
